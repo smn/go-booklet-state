@@ -19,10 +19,19 @@ describe("test api", function() {
 
 describe("Key Value store application", function() {
 
-    var tester = new vumigo.test_utils.ImTester(app.api);
-
-    it('should access keys & values', function(done) {
-        var a = true;
-        done();
+    var tester = new vumigo.test_utils.ImTester(app.api, {
+        async: true
     });
+
+    it('should increment the key and end the session', function(done) {
+        var p = tester.check_state({
+            user: null,
+            content: null,
+            next_state: 'done',  // it's only 1 state that we return to,
+            response: 'You are visitor number 1',
+            continue_session: false
+        });
+        p.then(done, done);
+    });
+
 });
