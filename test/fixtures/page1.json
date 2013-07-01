@@ -1,0 +1,7 @@
+{
+    "url": "http://host/path/?p=1",
+    "method": "GET",
+    "body": {
+        "content": "This is page 2."
+    }
+}
