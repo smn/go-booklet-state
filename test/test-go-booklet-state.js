@@ -1,7 +1,7 @@
 var fs = require("fs");
 var assert = require("assert");
 var vumigo = require("vumigo_v01");
-var app = require("../lib/go-kv-store");
+var app = require("../lib/go-booklet-state");
 
 // This just checks that you hooked you InteractionMachine
 // up to the api correctly and called im.attach();

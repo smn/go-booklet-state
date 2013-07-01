@@ -1,4 +1,9 @@
-go-kv-store
+go-booklet-state
 ===========
 
-Example of how to use Go's key value store from Javascript.
+Example of how to use Go's BookletState.
+
+::
+
+    $ npm install .
+    $ npm test

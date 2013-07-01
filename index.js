@@ -1,1 +1,1 @@
-module.exports = exports = require('./lib/go-ks-store');
+module.exports = exports = require('./lib/go-booklet-state');
